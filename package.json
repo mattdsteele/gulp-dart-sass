@@ -1,6 +1,6 @@
 {
-  "name": "gulp-sass",
-  "version": "4.0.1",
+  "name": "gulp-dart-sass",
+  "version": "0.9.0",
   "description": "Gulp plugin for sass",
   "main": "index.js",
   "engines": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/dlmanning/gulp-sass"
+    "url": "git://github.com/mattdsteele/gulp-dart-sass"
   },
   "keywords": [
     "gulpplugin",
@@ -21,7 +21,7 @@
   "author": "David Manning",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dlmanning/gulp-sass/issues"
+    "url": "https://github.com/mattdsteele/gulp-dart-sass/issues"
   },
   "dependencies": {
     "chalk": "^2.3.0",
