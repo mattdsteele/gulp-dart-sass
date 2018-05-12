@@ -1,6 +1,6 @@
-# gulp-sass [![Build Status](https://travis-ci.org/dlmanning/gulp-sass.svg?branch=master)](https://travis-ci.org/dlmanning/gulp-sass) [![Join the chat at https://gitter.im/dlmanning/gulp-sass](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dlmanning/gulp-sass?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![npm version](https://badge.fury.io/js/gulp-sass.svg)](http://badge.fury.io/js/gulp-sass)
+# gulp-dart-sass [![Build Status](https://travis-ci.org/mattdsteele/gulp-dart-sass.svg?branch=master)](https://travis-ci.org/mattdsteele/gulp-dart-sass) [![Join the chat at https://gitter.im/mattdsteele/gulp-dart-sass](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mattdsteele/gulp-dart-sass?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![npm version](https://badge.fury.io/js/gulp-dart-sass.svg)](http://badge.fury.io/js/gulp-dart-sass)
 
-Sass plugin for [Gulp](https://github.com/gulpjs/gulp).
+Sass plugin for [Gulp](https://github.com/gulpjs/gulp), using the [Dart Sass](https://github.com/sass/dart-sass) compiler.
 
 **_Before filing an issue, please make sure you have [Updated to the latest Gulp Sass](https://github.com/dlmanning/gulp-sass/wiki/Update-to-the-latest-Gulp-Sass) and have gone through our [Common Issues and Their Fixes](https://github.com/dlmanning/gulp-sass/wiki/Common-Issues-and-Their-Fixes) section._**
 
@@ -13,7 +13,7 @@ Only [Active LTS and Current releases][1] are supported.
 # Install
 
 ```
-npm install gulp-sass --save-dev
+npm install gulp-dart-sass --save-dev
 ```
 
 # Basic Usage
@@ -24,7 +24,7 @@ Something like this will compile your Sass files:
 'use strict';
 
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var sass = require('gulp-dart-sass');
 
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
@@ -43,7 +43,7 @@ You can also compile synchronously, doing something like this:
 'use strict';
 
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var sass = require('gulp-dart-sass');
 
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
@@ -58,7 +58,7 @@ gulp.task('sass:watch', function () {
 
 ## Options
 
-Pass in options just like you would for [`node-sass`](https://github.com/sass/node-sass#options); they will be passed along just as if you were using `node-sass`. Except for the `data` option which is used by gulp-sass internally. Using the `file` option is also unsupported and results in undefined behaviour that may change without notice.
+Pass in options just like you would for [`node-sass`](https://github.com/sass/node-sass#options); they will be passed along just as if you were using `node-sass`. Except for the `data` option which is used by gulp-dart-sass internally. Using the `file` option is also unsupported and results in undefined behaviour that may change without notice.
 
 For example:
 
@@ -72,7 +72,7 @@ gulp.task('sass', function () {
 
 ## Source Maps
 
-`gulp-sass` can be used in tandem with [gulp-sourcemaps](https://github.com/floridoo/gulp-sourcemaps) to generate source maps for the Sass to CSS compilation. You will need to initialize [gulp-sourcemaps](https://github.com/floridoo/gulp-sourcemaps) prior to running `gulp-sass` and write the source maps after.
+`gulp-dart-sass` can be used in tandem with [gulp-sourcemaps](https://github.com/floridoo/gulp-sourcemaps) to generate source maps for the Sass to CSS compilation. You will need to initialize [gulp-sourcemaps](https://github.com/floridoo/gulp-sourcemaps) prior to running `gulp-dart-sass` and write the source maps after.
 
 ```javascript
 var sourcemaps = require('gulp-sourcemaps');
@@ -101,7 +101,7 @@ gulp.task('sass', function () {
 
 # Issues
 
-`gulp-sass` is a very light-weight wrapper around [`node-sass`](https://github.com/sass/node-sass), which in turn is a Node binding for [`libsass`](https://github.com/sass/libsass), which in turn is a port of [`Sass`](https://github.com/sass/sass). Because of this, the issue you're having likely isn't a `gulp-sass` issue, but an issue with one of those three projects.
+`gulp-dart-sass` is a very light-weight wrapper around [`node-sass`](https://github.com/sass/node-sass), which in turn is a Node binding for [`libsass`](https://github.com/sass/libsass), which in turn is a port of [`Sass`](https://github.com/sass/sass). Because of this, the issue you're having likely isn't a `gulp-dart-sass` issue, but an issue with one of those three projects.
 
 If you have a feature request/question how Sass works/concerns on how your Sass gets compiled/errors in your compiling, it's likely a `libsass` or `Sass` issue and you should file your issue with one of those projects.
 
