@@ -5,6 +5,8 @@ env:
   node: true
 
 rules:
+  quotes:
+    - 0
   max-len:
     - 2
     - 120
