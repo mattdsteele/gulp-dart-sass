@@ -2,8 +2,6 @@
 
 Sass plugin for [Gulp](https://github.com/gulpjs/gulp), using the [Dart Sass](https://github.com/sass/dart-sass) compiler.
 
-**_Before filing an issue, please make sure you have [Updated to the latest Gulp Sass](https://github.com/dlmanning/gulp-sass/wiki/Update-to-the-latest-Gulp-Sass) and have gone through our [Common Issues and Their Fixes](https://github.com/dlmanning/gulp-sass/wiki/Common-Issues-and-Their-Fixes) section._**
-
 # Support
 
 Only [Active LTS and Current releases][1] are supported.
