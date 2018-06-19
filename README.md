@@ -56,7 +56,7 @@ gulp.task('sass:watch', function () {
 
 ## Options
 
-Pass in options just like you would for [`node-sass`](https://github.com/sass/node-sass#options); they will be passed along just as if you were using `node-sass`. Except for the `data` option which is used by gulp-dart-sass internally. Using the `file` option is also unsupported and results in undefined behaviour that may change without notice.
+Pass in options just like you would for [`dart-sass`](https://github.com/sass/node-sass#options); they will be passed along just as if you were using `dart-sass`. Except for the `data` option which is used by gulp-dart-sass internally. Using the `file` option is also unsupported and results in undefined behaviour that may change without notice.
 
 For example:
 
@@ -99,10 +99,10 @@ gulp.task('sass', function () {
 
 # Issues
 
-`gulp-dart-sass` is a very light-weight wrapper around [`node-sass`](https://github.com/sass/node-sass), which in turn is a Node binding for [`libsass`](https://github.com/sass/libsass), which in turn is a port of [`Sass`](https://github.com/sass/sass). Because of this, the issue you're having likely isn't a `gulp-dart-sass` issue, but an issue with one of those three projects.
+`gulp-dart-sass` is a very light-weight wrapper around [`dart-sass`](https://github.com/sass/dart-sass), which is a port of [`Sass`](https://github.com/sass/sass). Because of this, the issue you're having likely isn't a `gulp-dart-sass` issue, but an issue with one of those projects.
 
-If you have a feature request/question how Sass works/concerns on how your Sass gets compiled/errors in your compiling, it's likely a `libsass` or `Sass` issue and you should file your issue with one of those projects.
+If you have a feature request/question how Sass works/concerns on how your Sass gets compiled/errors in your compiling, it's likely a `dart-sass` or `Sass` issue and you should file your issue with one of those projects.
 
-If you're having problems with the options you're passing in, it's likely a `node-sass` or `libsass` issue and you should file your issue with one of those projects.
+If you're having problems with the options you're passing in, it's likely a `dart-sass` or `libsass` issue and you should file your issue with one of those projects.
 
 We may, in the course of resolving issues, direct you to one of these other projects. If we do so, please follow up by searching that project's issue queue (both open and closed) for your problem and, if it doesn't exist, filing an issue with them.
