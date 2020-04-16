@@ -7,7 +7,7 @@ const clonedeep = require('lodash.clonedeep');
 const path = require('path');
 const applySourceMap = require('vinyl-sourcemaps-apply');
 
-const PLUGIN_NAME = 'gulp-sass';
+const PLUGIN_NAME = 'gulp-dart-sass';
 
 //////////////////////////////
 // Main Gulp Sass function
