@@ -1,6 +1,6 @@
 {
   "name": "gulp-dart-sass",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Gulp plugin for sass",
   "main": "index.js",
   "engines": {
