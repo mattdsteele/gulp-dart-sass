@@ -56,7 +56,7 @@ gulp.task('sass:watch', function () {
 
 ## Options
 
-Pass in options just like you would for [`dart-sass`](https://github.com/sass/node-sass#options); they will be passed along just as if you were using `dart-sass`. Except for the `data` option which is used by gulp-dart-sass internally. Using the `file` option is also unsupported and results in undefined behaviour that may change without notice.
+Pass in options just like you would for [`node-sass`](https://github.com/sass/node-sass#options); they will be passed along just as if you were using `dart-sass`. Except for the `data` option which is used by gulp-dart-sass internally. Using the `file` option is also unsupported and results in undefined behaviour that may change without notice.
 
 For example:
 
